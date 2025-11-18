@@ -1,5 +1,5 @@
 import app from "./app.js";
-const PORT = 3000;
+import { PORT } from "./config.js";
 
 async function main() {
   try {

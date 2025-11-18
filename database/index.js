@@ -1,19 +1,7 @@
 import sql from "mssql";
+import { dbConfig } from "../src/config.js";
 
-const config = {
-  server: "servereps.database.windows.net",
-  database: "EPS",
-  user: "app_EPS",
-  password: "Slc$%92035",
-  authentication: {
-    type: "default",
-  },
-  options: {
-    encrypt: true,
-    trustServerCertificate: false,
-    connectTimeout: 30000,
-  },
-};
+const config = dbConfig;
 
 let pool = null;
 
